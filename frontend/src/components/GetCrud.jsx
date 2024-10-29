@@ -74,7 +74,7 @@ const GetCrud = () => {
     async function getCruds() {
       try {
         const response = await axios.get(
-          "/api/cruds/getData"
+          "https://merncrud-backend.vercel.app/api/cruds/getData"
         );
 
         setCruds(response.data);
