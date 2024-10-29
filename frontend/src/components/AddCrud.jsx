@@ -18,7 +18,7 @@ const AddCrud = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "/api/cruds/addData",
+        "https://merncrud-backend.vercel.app/api/cruds/addData",
         crud
       );
       setCrud(res.data);
