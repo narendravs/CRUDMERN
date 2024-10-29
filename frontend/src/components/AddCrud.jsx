@@ -18,7 +18,7 @@ const AddCrud = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/cruds/addData",
+        "/api/cruds/addData",
         crud
       );
       setCrud(res.data);
