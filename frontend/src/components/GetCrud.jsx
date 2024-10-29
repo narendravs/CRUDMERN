@@ -74,7 +74,7 @@ const GetCrud = () => {
     async function getCruds() {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/cruds/getData"
+          "/api/cruds/getData"
         );
 
         setCruds(response.data);
